@@ -1,0 +1,36 @@
+var na = prompt("คุณชื่ออะไร")
+var h = prompt("ส่วนสูง")
+var w = prompt("น้ำหนัก")
+
+    console.log(w)
+    let h2 = h/100
+    console.log(h2)
+    var BMI1 = (h2**2)/w
+    var BMI2 = w/(h2**2)
+    document.getElementById("ep1").innerHTML = BMI2.toFixed(2)
+
+    if(BMI2 > 30){
+        var nvf = "คุณ "+na+" อยู่ในเกณฑ์น้ำหนักมาก/อ้วนมาก"
+        document.getElementById("BMI30").innerHTML = nvf
+        console.log(nvf)
+    }
+    else if(BMI2 < 18.5){
+        var nvf = "คุณ "+na+" อยู่ในเกณฑ์น้ำหนักน้อย/ผอมมาก"
+        document.getElementById("BMI30").innerHTML = nvf
+        console.log(nvf)
+    }
+    else if(BMI2 > 25){
+        var nvf = "คุณ "+na+" อยู่ในเกณฑ์อ้วน"
+        document.getElementById("BMI30").innerHTML = nvf
+        console.log(nvf)
+    }
+    else if(BMI2 > 18.5){
+        var nvf = "คุณ "+na+" อยู่ในเกณฑ์สุขภาพดี"
+        document.getElementById("BMI30").innerHTML = nvf
+        console.log(nvf)
+    }
+    else{
+        var nvf = "คุณ "+na+" อยู่ในเกณฑ์ค่อนข้างอ้วน"
+        document.getElementById("BMI30").innerHTML = nvf
+        console.log(nvf)
+    }
