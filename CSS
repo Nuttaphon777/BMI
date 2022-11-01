@@ -1,0 +1,27 @@
+body {
+    background-color: sandybrown;
+}
+h1 {
+    text-align: center;
+    color:brown;
+}
+h2 {
+    text-align: center;
+    color:black;
+}
+.cicle {
+    background-color: rgb(87, 243, 134);
+    border-radius: 5%;
+    
+    border-color: black;
+    text-align: center;
+    background-repeat: repeat;
+    max-block-size: 100%;
+}
+
+h3 {
+    background-color: rgb(213, 100, 100);
+    border-radius: 25%;
+    text-align: center;
+    color: white;
+}
